@@ -1,0 +1,11 @@
+<h6>
+  History
+  <small class="text-muted">List of links to recent videos</small>
+</h6>
+<div class="container">
+  <div class="list-group">
+<ul *ngFor="let history of historylist">
+  <li (click)="onClick(history.videoUrl)">
+     >{{history.videoUrl}}
+  </li>
+</ul>
